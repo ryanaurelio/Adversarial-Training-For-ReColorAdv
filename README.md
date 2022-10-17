@@ -1,7 +1,7 @@
 # Adversarial Training For ReColorAdv
 
 ## Description
-The idea of this defense is to use an adversarial training to defend against the ReColorAdv attack. In the training process of a model, ReColorAdv attack will be performed to the current state of the model for each batch. First, a model will be generated using ***model_generator***. Then the ReColorAdv attack will be applied to this generated model using ***model_attack***. Lastly, ***model_defense** will try to defense this attack using an adversarial trqining.
+The idea of this defense is to use an adversarial training to defend against the ReColorAdv attack. In the training process of a model, ReColorAdv attack will be performed to the current state of the model for each batch. First, a model will be generated using ***model_generator***. Then the ReColorAdv attack will be applied to this generated model using ***model_attack***. Lastly, ***model_defense*** will try to defense this attack using an adversarial trqining.
 
 ## Setup
 The setup that is used in this study.
@@ -10,7 +10,7 @@ The setup that is used in this study.
 |------------------|--------------------------------------------------|
 | Model            | ResNet                                           |
 | Dataset          | CIFAR10                                          |
-| Tranformation    | Pad by 4, random flip and crop into 32x32 images |
+| Transformation   | Pad by 4, random flip and crop into 32x32 images |
 | Batch size       | 100                                              |
 | Number of epochs | 10                                               |
 | Learning rate    | 0.001                                            |
